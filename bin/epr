@@ -76,7 +76,7 @@ def bitbucket(user, repo)
           repo_name,
           TYPE_PR,
           pr.id,
-          pr.author ? pr.author.username : no_user,
+          pr.author ? pr.author.nickname : no_user,
           pr.title,
           pr.state,
           localtime(pr.created_on),
